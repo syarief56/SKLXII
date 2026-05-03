@@ -6,14 +6,24 @@
 <title>Kelulusan SMA Islam Pujer</title>
 
 <style>
-    body {
+    html, body {
+        height: 100%;
         margin: 0;
+    }
+
+    body {
         font-family: Arial, sans-serif;
         color: white;
-        background: linear-gradient(to bottom, #4facfe, #003366);
+        background: linear-gradient(180deg, #5fb3ff, #003366);
+        min-height: 100vh;
     }
 
     .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         padding: 20px;
     }
@@ -50,6 +60,7 @@
     /* GARIS */
     .line {
         width: 100%;
+        max-width: 600px;
         height: 3px;
         background: yellow;
         margin: 15px 0;
@@ -60,6 +71,7 @@
         font-weight: bold;
         font-size: 18px;
         margin-bottom: 30px;
+        max-width: 700px;
     }
 
     /* BUTTON */
@@ -88,8 +100,7 @@
         border-radius: 10px;
         box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
         max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
     }
 
     .password-box input {
@@ -129,7 +140,7 @@
 
     <!-- HEADER -->
     <div class="header">
-        <img src="https://drive.google.com/file/d/1EYIyTa89afvi2pwcGB1HW_Vj6Zs60c0E/preview" alt="Logo Sekolah">
+        <img src="logo.png" alt="Logo Sekolah">
         <div class="header-text">
             <h2>SMA ISLAM PUJER BONDOWOSO</h2>
             <p>Alamat Sekolah Anda</p>
@@ -166,15 +177,15 @@
         }, 1500);
     };
 
-function cek() {
-    var pw = document.getElementById("pw").value;
+    function cek() {
+        var pw = document.getElementById("pw").value;
 
-    if (pw === "12345") {
-        window.open("https://drive.google.com/file/d/1imdi1JguSyygAmArkpJG3-QMwun3sEei/preview", "_blank");
-    } else {
-        alert("Password salah!");
+        if (pw === "12345") {
+            window.open("https://drive.google.com/file/d/1imdi1JguSyygAmArkpJG3-QMwun3sEei/preview", "_blank");
+        } else {
+            alert("Password salah!");
+        }
     }
-}
 </script>
 
 </body>
