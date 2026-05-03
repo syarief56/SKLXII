@@ -166,14 +166,15 @@
         }, 1500);
     };
 
-    function cek() {
-        var pw = document.getElementById("pw").value;
+function cek() {
+    var pw = document.getElementById("pw").value;
 
-        if (pw === "12345") {
-            alert("Password benar! (Nanti bisa diarahkan ke halaman khusus)");
-        } else {
-            alert("Password salah!");
-        }
+    if (pw === "12345") {
+        window.open("https://drive.google.com/file/d/1imdi1JguSyygAmArkpJG3-QMwun3sEei/preview", "_blank");
+    } else {
+        alert("Password salah!");
+    }
+}
     }
 </script>
 
